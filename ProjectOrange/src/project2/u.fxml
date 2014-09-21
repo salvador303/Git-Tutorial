@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.*?>
 
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="538.0" prefWidth="716.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="538.0" prefWidth="716.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project2.FXMLDocumentController">
     <children>
         <BorderPane layoutX="238.0" layoutY="154.0" prefHeight="538.0" prefWidth="716.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <center>
@@ -103,7 +103,7 @@
                                         <MenuItem mnemonicParsing="false" text="Save Image 3" />
                                     </items>
                                 </Menu>
-                             <!-- <MenuItem id="menuItemCloseID" fx:id="menuItemCloseID" mnemonicParsing="false" onAction="#menuItemClose" text="Close" />-->
+                             <MenuItem id="menuItemCloseID" fx:id="menuItemCloseID" mnemonicParsing="false" onAction="#menuItemClose" text="Close" />
                             </items>
                         </Menu>
                     </menus>
