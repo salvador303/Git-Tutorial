@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="538.0" prefWidth="716.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <BorderPane layoutX="238.0" layoutY="154.0" prefHeight="538.0" prefWidth="716.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <center>
+                <AnchorPane>
+                    <children>
+                        <BorderPane prefHeight="538.0" prefWidth="716.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" BorderPane.alignment="CENTER">
+                            <left>
+                                <AnchorPane prefHeight="376.0" prefWidth="240.0" style="-fx-border-color: black;" BorderPane.alignment="CENTER">
+                                    <children>
+                                        <BorderPane prefHeight="376.0" prefWidth="240.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <top>
+                                                <AnchorPane prefHeight="25.0" prefWidth="240.0">
+                                                    <children>
+                                                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="38.0" prefWidth="240.0" text="Image 1" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" BorderPane.alignment="CENTER">
+                                                            <font>
+                                                                <Font size="20.0" />
+                                                            </font>
+                                                        </Label>
+                                                    </children>
+                                                </AnchorPane>
+                                            </top>
+                                        </BorderPane>
+                                    </children>
+                                </AnchorPane>
+                            </left>
+                            <center>
+                                <AnchorPane prefHeight="376.0" prefWidth="240.0" style="-fx-border-color: Black;" BorderPane.alignment="CENTER">
+                                    <children>
+                                        <BorderPane prefHeight="376.0" prefWidth="236.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <top>
+                                                <AnchorPane prefHeight="25.0" prefWidth="240.0">
+                                                    <children>
+                                                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="25.0" prefWidth="234.0" text="Image 2" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" BorderPane.alignment="CENTER">
+                                                            <font>
+                                                                <Font size="20.0" />
+                                                            </font>
+                                                        </Label>
+                                                    </children>
+                                                </AnchorPane>
+                                            </top>
+                                        </BorderPane>
+                                    </children>
+                                </AnchorPane>
+                            </center>
+                            <right>
+                                <AnchorPane prefHeight="376.0" prefWidth="240.0" style="-fx-border-color: black;" BorderPane.alignment="CENTER">
+                                    <children>
+                                        <BorderPane prefHeight="376.0" prefWidth="240.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <top>
+                                                <AnchorPane prefHeight="25.0" prefWidth="240.0">
+                                                    <children>
+                                                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="38.0" prefWidth="240.0" text="Image 3" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" BorderPane.alignment="CENTER">
+                                                            <font>
+                                                                <Font size="20.0" />
+                                                            </font>
+                                                        </Label>
+                                                    </children>
+                                                </AnchorPane>
+                                            </top>
+                                        </BorderPane>
+                                    </children>
+                                </AnchorPane>
+                            </right>
+                        </BorderPane>
+                    </children>
+                </AnchorPane>
+            </center>
+            <bottom>
+                <AnchorPane prefHeight="138.0" prefWidth="716.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <TextArea prefHeight="200.0" prefWidth="716.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                    </children>
+                </AnchorPane>
+            </bottom>
+            <top>
+                <MenuBar BorderPane.alignment="CENTER">
+                    <menus>
+                        <Menu mnemonicParsing="false" text="File">
+                            <items>
+                                <Menu mnemonicParsing="false" text="Load">
+                                    <items>
+                                        <MenuItem id="loadText" mnemonicParsing="false" text="Load Text" />
+                                        <MenuItem mnemonicParsing="false" text="Load Image 1" />
+                                        <MenuItem mnemonicParsing="false" text="Load Image 2" />
+                                        <MenuItem mnemonicParsing="false" text="Load Image 3" />
+                                    </items>
+                                </Menu>
+                                <Menu mnemonicParsing="false" text="Save">
+                                    <items>
+                                        <MenuItem mnemonicParsing="false" text="Save Text" />
+                                        <MenuItem mnemonicParsing="false" text="Save Image 1" />
+                                        <MenuItem mnemonicParsing="false" text="Save Image 2" />
+                                        <MenuItem mnemonicParsing="false" text="Save Image 3" />
+                                    </items>
+                                </Menu>
+                             <!-- <MenuItem id="menuItemCloseID" fx:id="menuItemCloseID" mnemonicParsing="false" onAction="#menuItemClose" text="Close" />-->
+                            </items>
+                        </Menu>
+                    </menus>
+                </MenuBar>
+            </top>
+        </BorderPane>
+    </children>
+</AnchorPane>
