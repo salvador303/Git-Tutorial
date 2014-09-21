@@ -27,6 +27,7 @@ git clone < repo address >
 ```
 
 **Creating your own feature branch**
+
 Getting the latest base code.
 ```sh
 git checkout develop
@@ -38,7 +39,8 @@ git checkout -b feature/<something your working on>
 ```
 Now your ready to make changes to the code.
 
-**Diffing your file to privious version**
+**Reveiew your changes, by comparing current and  privious versions**
+
 For a specific file
 ```sh
 git diff <name of file | path and name of file>
@@ -50,6 +52,7 @@ git diff
 ```
 
 **Creating a commit (saving your code)**
+
 When changes are complete, or you would like to save them in the repo
 
 Stage all changes for commit
@@ -69,16 +72,18 @@ git log -1
 
 **Getting the branch Name**
 
-Get your baranch name before you push, copy your branch name
+Get your branch name before you push, copy your branch name
 ```sh
 git branch
 ```
 **Pushing to the repo**
+
 Push to the repo, you can paste your branch name from above
 ```sh
 git push origin feature/<something your working on>
 ```
 **Create Pull Request**
+
 1. Go to the repo website, and click on pull request.
 2. Click on, New pull request.
 3. Add the teammebers to do a code reviews.
@@ -87,15 +92,19 @@ git push origin feature/<something your working on>
 Git Tutorial/links
 ------------------
 **Basic Git commands**
+
 https://confluence.atlassian.com/display/STASH/Basic+Git+commands
 
 **Tutorial on how to manipulate commits**
+
 http://pcottle.github.io/learnGitBranching/
 
 **Git flow**
+
 http://nvie.com/posts/a-successful-git-branching-model/
 
 **Pro Git**
+
 http://git-scm.com/book
 
 Licence
