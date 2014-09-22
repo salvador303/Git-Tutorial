@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="538.0" prefWidth="716.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <BorderPane layoutX="238.0" layoutY="154.0" prefHeight="538.0" prefWidth="716.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <AnchorPane>
+               <children>
+                  <BorderPane prefHeight="376.0" prefWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" BorderPane.alignment="CENTER">
+                     <center>
+                        <AnchorPane>
+                           <children>
+                              <HBox prefHeight="376.0" prefWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="900.0" style="-fx-border-color: black;">
+                                       <children>
+                                          <Label alignment="CENTER" prefHeight="27.0" prefWidth="9000.0" text="Image 1">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <ImageView fx:id="imageContent1" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                                       </children>
+                                    </VBox>
+                                    <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="900.0" style="-fx-border-color: black;">
+                                       <children>
+                                          <Label alignment="CENTER" prefHeight="27.0" prefWidth="9000.0" text="Image 2">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <ImageView fx:id="imageContent2" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                                       </children>
+                                    </VBox>
+                                    <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="900.0" style="-fx-border-color: black;">
+                                       <children>
+                                          <Label alignment="CENTER" prefHeight="27.0" prefWidth="90000.0" text="Image 3">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <ImageView fx:id="imageContent3" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                     </center>
+                  </BorderPane>
+               </children>
+            </AnchorPane>
+         </center>
+         <bottom>
+            <AnchorPane prefHeight="138.0" prefWidth="716.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TextArea prefHeight="200.0" prefWidth="716.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+         </bottom>
+         <top>
+            <MenuBar BorderPane.alignment="CENTER">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                        <Menu mnemonicParsing="false" text="Load">
+                          <items>
+                              <MenuItem id="loadText" mnemonicParsing="false" text="Load Text" />
+                            <MenuItem mnemonicParsing="false" text="Load Image 1" />
+                              <MenuItem mnemonicParsing="false" text="Load Image 2" />
+                              <MenuItem mnemonicParsing="false" text="Load Image 3" />
+                          </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Save">
+                          <items>
+                              <MenuItem mnemonicParsing="false" text="Save Text" />
+                              <MenuItem mnemonicParsing="false" text="Save Image 1" />
+                              <MenuItem mnemonicParsing="false" text="Save Image 2" />
+                              <MenuItem mnemonicParsing="false" text="Save Image 3" />
+                          </items>
+                        </Menu>
+                    <MenuItem id="dds" fx:id="menuItemCloseID" mnemonicParsing="false" onAction="#menuItemCloseAction" text="Close" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>
