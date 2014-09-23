@@ -15,24 +15,22 @@ import javafx.scene.control.TextArea;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.FileChooser;
-import javafx.scene.layout.BorderPane;
 
 /**
  *
  * @author oscar
  */
-public class FXMLDocumentController implements Initializable {
+public class Controller implements Initializable {
 
     //Images to be displayed
-
     @FXML
     private TextArea txt;
     @FXML
-    private BorderPane image1Pane;
+    private ImageView imageContent1;
     @FXML
-    private BorderPane image2Pane;
+    private ImageView imageContent2;
     @FXML
-    private BorderPane image3Pane;
+    private ImageView imageContent3;
 
     @FXML
     private void loadTxt(ActionEvent event) {
@@ -41,20 +39,18 @@ public class FXMLDocumentController implements Initializable {
 
     @FXML
     private void loadImgOne(ActionEvent event) {
-        ImageView view = new ImageView(getImg());
-        image1Pane.getChildren().add(view);
+        imageContent1.setImage(getImg());
     }
 
     @FXML
     private void loadImgTwo(ActionEvent event) {
-        ImageView view = new ImageView(getImg());
-        image2Pane.getChildren().add(view);
+        imageContent2.setImage(getImg());
     }
 
     @FXML
     private void loadImgThree(ActionEvent event) {
-        ImageView view = new ImageView(getImg());
-        image3Pane.getChildren().add(view);
+        imageContent3.fitWidthProperty();
+        imageContent3.setImage(getImg());
     }
 
     /**
@@ -63,7 +59,7 @@ public class FXMLDocumentController implements Initializable {
      * @param event
      */
     @FXML
-    private void menuItemClose(ActionEvent event) {
+    private void menuItemCloseAction(ActionEvent event) {
         System.exit(0);
     }
 
@@ -72,7 +68,7 @@ public class FXMLDocumentController implements Initializable {
      *
      * @return Image object of chosen image
      */
-    private Image getImg() { 
+    private Image getImg() {
         FileChooser fc = new FileChooser();
         String file = fc.showOpenDialog(null).getAbsoluteFile().toURI().toString();
         System.out.println(file);
