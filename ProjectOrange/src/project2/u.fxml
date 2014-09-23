@@ -17,7 +17,7 @@
                             <left>
                                 <AnchorPane prefHeight="376.0" prefWidth="240.0" style="-fx-border-color: black;" BorderPane.alignment="CENTER">
                                     <children>
-                                        <BorderPane prefHeight="376.0" prefWidth="240.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                        <BorderPane fx:id="image1Pane" prefHeight="376.0" prefWidth="240.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                             <top>
                                                 <AnchorPane prefHeight="25.0" prefWidth="240.0">
                                                     <children>
@@ -36,7 +36,7 @@
                             <center>
                                 <AnchorPane prefHeight="376.0" prefWidth="240.0" style="-fx-border-color: Black;" BorderPane.alignment="CENTER">
                                     <children>
-                                        <BorderPane prefHeight="376.0" prefWidth="236.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                        <BorderPane fx:id="image2Pane" prefHeight="376.0" prefWidth="236.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                             <top>
                                                 <AnchorPane prefHeight="25.0" prefWidth="240.0">
                                                     <children>
@@ -55,7 +55,7 @@
                             <right>
                                 <AnchorPane prefHeight="376.0" prefWidth="240.0" style="-fx-border-color: black;" BorderPane.alignment="CENTER">
                                     <children>
-                                        <BorderPane prefHeight="376.0" prefWidth="240.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                        <BorderPane fx:id="image3Pane" prefHeight="376.0" prefWidth="240.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                             <top>
                                                 <AnchorPane prefHeight="25.0" prefWidth="240.0">
                                                     <children>
@@ -78,7 +78,7 @@
             <bottom>
                 <AnchorPane prefHeight="138.0" prefWidth="716.0" BorderPane.alignment="CENTER">
                     <children>
-                        <TextArea prefHeight="200.0" prefWidth="716.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                        <TextArea fx:id="txt"  prefHeight="200.0" prefWidth="716.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
                     </children>
                 </AnchorPane>
             </bottom>
@@ -89,10 +89,10 @@
                             <items>
                                 <Menu mnemonicParsing="false" text="Load">
                                     <items>
-                                        <MenuItem id="loadText" mnemonicParsing="false" text="Load Text" />
-                                        <MenuItem mnemonicParsing="false" text="Load Image 1" />
-                                        <MenuItem mnemonicParsing="false" text="Load Image 2" />
-                                        <MenuItem mnemonicParsing="false" text="Load Image 3" />
+                                        <MenuItem id="loadText" mnemonicParsing="false" text="Load Text" onAction="#loadTxt"/>
+                                        <MenuItem mnemonicParsing="false" text="Load Image 1" onAction="#loadImgOne" />
+                                        <MenuItem mnemonicParsing="false" text="Load Image 2" onAction="#loadImgTwo"/>
+                                        <MenuItem mnemonicParsing="false" text="Load Image 3" onAction="#loadImgThree"/>
                                     </items>
                                 </Menu>
                                 <Menu mnemonicParsing="false" text="Save">
