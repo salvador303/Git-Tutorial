@@ -80,7 +80,7 @@
                         </Menu>
                         <Menu mnemonicParsing="false" text="Save">
                           <items>
-                              <MenuItem mnemonicParsing="false" text="Save Text" />
+                              <MenuItem mnemonicParsing="false" onAction="#saveTxt" text="Save text" />
                               <MenuItem mnemonicParsing="false" text="Save Image 1" />
                               <MenuItem mnemonicParsing="false" text="Save Image 2" />
                               <MenuItem mnemonicParsing="false" text="Save Image 3" />

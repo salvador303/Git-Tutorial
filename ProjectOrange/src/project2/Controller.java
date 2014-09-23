@@ -53,6 +53,11 @@ public class Controller implements Initializable {
         imageContent3.setImage(getImg());
     }
 
+    @FXML
+    private void saveTxt(ActionEvent event) {
+        saveDialogue("txt");
+    }
+
     /**
      * closes program if menu item "close" is clicked
      *
@@ -77,6 +82,31 @@ public class Controller implements Initializable {
             return img;
         }
         return null;
+    }
+
+    private void saveDialogue(String content) {
+        //Show save file dialog
+        FileChooser fileChooser = new FileChooser();
+        File file = fileChooser.showSaveDialog(null);
+
+        if (file != null) {
+            SaveFile(content, file);
+        }
+    }
+
+    private void SaveFile(String content, File file) {
+        try {
+            FileWriter fileWriter = null;
+
+            fileWriter = new FileWriter(file);
+            if (content.equals("txt")) {
+                fileWriter.write(txt.getText());
+            }
+            fileWriter.close();
+        } catch (IOException ex) {
+            System.err.println(ex);
+        }
+
     }
 
     /**
