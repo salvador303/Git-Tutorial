@@ -81,14 +81,27 @@
                         <Menu mnemonicParsing="false" text="Save">
                           <items>
                               <MenuItem mnemonicParsing="false" onAction="#saveTxt" text="Save text" />
-                              <MenuItem mnemonicParsing="false" text="Save Image 1" />
-                              <MenuItem mnemonicParsing="false" text="Save Image 2" />
-                              <MenuItem mnemonicParsing="false" text="Save Image 3" />
+                              <MenuItem mnemonicParsing="false" onAction="#fileMenuSaveImage1" text="Save Image 1" />
+                              <MenuItem mnemonicParsing="false" onAction="#fileMenuSaveImage2" text="Save Image 2" />
+                              <MenuItem mnemonicParsing="false" onAction="#fileMenuSaveImage3" text="Save Image 3" />
                           </items>
                         </Menu>
                     <MenuItem id="dds" fx:id="menuItemCloseID" mnemonicParsing="false" onAction="#menuItemCloseAction" text="Close" />
                   </items>
                 </Menu>
+                  <Menu mnemonicParsing="false" text="Edit">
+                    <items>
+                        <Menu mnemonicParsing="false" text="Clear">
+                          <items>
+                            <MenuItem mnemonicParsing="false" onAction="#editMenuClearImage1" text="Clear Image 1" />
+                            <MenuItem mnemonicParsing="false" onAction="#editMenuClearImage2" text="Clear Image 2" />
+                              <MenuItem mnemonicParsing="false" onAction="#editMenuClearImage3" text="Clear Image 3" />
+                              <MenuItem mnemonicParsing="false" onAction="#editMenuClearText" text="Clear Text" />
+                              <MenuItem mnemonicParsing="false" onAction="#editMenuClearEverything" text="Clear All" />
+                          </items>
+                        </Menu>
+                    </items>
+                  </Menu>
               </menus>
             </MenuBar>
          </top>
