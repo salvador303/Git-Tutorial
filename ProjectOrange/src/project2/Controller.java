@@ -58,6 +58,46 @@ public class Controller implements Initializable {
         saveDialogue("txt");
     }
 
+        @FXML
+    private void fileMenuSaveImage1(ActionEvent event) {
+        
+    }
+    
+    @FXML
+    private void fileMenuSaveImage2(ActionEvent event) {
+        
+    }
+    
+    @FXML
+    private void fileMenuSaveImage3(ActionEvent event) {
+        
+    }
+    
+    @FXML
+    private void editMenuClearImage1(ActionEvent event) {
+        
+    }
+    
+    @FXML
+    private void editMenuClearImage2(ActionEvent event) {
+        
+    }
+    
+    @FXML
+    private void editMenuClearImage3(ActionEvent event) {
+        
+    }
+    
+    @FXML
+    private void editMenuClearText(ActionEvent event) {
+        
+    }    
+    
+    @FXML
+    private void editMenuClearEverything(ActionEvent event) {
+        
+    }        
+    
     /**
      * closes program if menu item "close" is clicked
      *
