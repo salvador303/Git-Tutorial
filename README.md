@@ -1,6 +1,5 @@
 Git Tutorial
 ============
----
 
 Version: CS4260 (2015)
 
@@ -12,12 +11,19 @@ man git <command>
 Branches
 ========
 All branches can be see with the following command.  ``` git branch -a ```
+The output will appear as:
+```
+<branch 1>
+<branch 2>
+remote/<branch 1>
+```
 
 Local
 -----
 Will have just a name and appear as
 ```
 <branch name>
+```
 
 Remote
 ------
